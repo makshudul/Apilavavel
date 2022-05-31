@@ -10,7 +10,7 @@ class Review extends Model
 {
     use HasFactory;
     protected $guarded=[];
-
+        //    Database realtionship with Product table
     public function product(){
         return $this->belongsTo(Product::class);
     }

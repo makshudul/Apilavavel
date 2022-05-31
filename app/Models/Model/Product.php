@@ -10,6 +10,8 @@ class Product extends Model
 {
     use HasFactory;
     protected $guarded=[];
+
+        // database realtionship with review table
     public function reviews(){
         return $this->hasMany(Review::class);
     }
